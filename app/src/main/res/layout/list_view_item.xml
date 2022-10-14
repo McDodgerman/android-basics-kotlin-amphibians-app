@@ -20,10 +20,10 @@
     <data>
         <variable
             name="amphibian"
-            type="com.example.amphibians.network.Amphibian" />
+            type="com.stargrazer.amphibians.network.Amphibian" />
         <variable
             name="clickListener"
-            type="com.example.amphibians.ui.AmphibianListener" />
+            type="com.stargrazer.amphibians.ui.AmphibianListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

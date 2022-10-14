@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.amphibians.ui
+package com.stargrazer.amphibians.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.amphibians.databinding.ListViewItemBinding
-import com.example.amphibians.network.Amphibian
+import com.stargrazer.amphibians.databinding.ListViewItemBinding
+import com.stargrazer.amphibians.network.Amphibian
 
 /**
  * This class implements a [RecyclerView] [ListAdapter] which uses Data Binding to present [List]

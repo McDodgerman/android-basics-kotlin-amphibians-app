@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.amphibians
+package com.stargrazer.amphibians
 
 import android.view.View
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.amphibians.network.Amphibian
-import com.example.amphibians.ui.AmphibianApiStatus
-import com.example.amphibians.ui.AmphibianListAdapter
+import com.stargrazer.amphibians.network.Amphibian
+import com.stargrazer.amphibians.ui.AmphibianApiStatus
+import com.stargrazer.amphibians.ui.AmphibianListAdapter
 
 /**
  * Updates the data shown in the [RecyclerView]

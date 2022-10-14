@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.amphibians.ui
+package com.stargrazer.amphibians.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,12 +21,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
-import com.example.amphibians.R
-import com.example.amphibians.databinding.FragmentAmphibianListBinding
+import com.stargrazer.amphibians.databinding.FragmentAmphibianDetailBinding
 
-
-class AmphibianListFragment : Fragment() {
+/**
+ * This Fragment shows the detailed information on a particular Amphibian
+ */
+class AmphibianDetailFragment : Fragment() {
 
     private val viewModel: AmphibianViewModel by activityViewModels()
 
@@ -34,15 +34,10 @@ class AmphibianListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentAmphibianListBinding.inflate(inflater)
-        // TODO: call the view model method that calls the amphibians api
+
+        val binding = FragmentAmphibianDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-        binding.recyclerView.adapter = AmphibianListAdapter(AmphibianListener { amphibian ->
-            viewModel.onAmphibianClicked(amphibian)
-            findNavController()
-                .navigate(R.id.action_amphibianListFragment_to_amphibianDetailFragment)
-        })
 
         // Inflate the layout for this fragment
         return binding.root
